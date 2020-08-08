@@ -1,0 +1,125 @@
+.footer {
+	padding: 70px 0 80px;
+	background-image: url('../img/footer/bg-img.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	&__body {
+		display: flex;
+		justify-content: center;
+	}
+	&__col {
+		width: 30%;
+		&-x {
+			width: 40%;
+		}
+	}
+	&__info {
+		&-item {
+			&-logo {
+				margin: 0 0 36px;
+				display: inline-block;
+				& img {
+					display: block;
+					max-width: 100%;
+					height: auto;
+				}
+			}
+			&-decription {
+				font-size: 14px;
+				font-weight: normal;
+				& span {
+					display: block;
+					&:last-child {
+						margin: 10px 0 0;
+					}
+				}
+			}
+			&-link {
+				padding: 30px 0;
+				margin: 0 0 15px;
+				display: inline-block;
+				color: $blue;
+				font-size: 16px;
+				font-weight: normal;
+			}
+			&-add {
+				&-title {
+					margin: 0 0 5px;
+					display: block;
+				}
+				&-link {
+					color: $blue;
+				}
+			}
+			&-copyright {
+				padding: 80px 0 0;
+				display: block;
+			}
+		}
+	}
+	&__services {
+		padding: 15px 0 0;
+		&-item {
+			margin: 0 0 30px;
+			&:last-child {
+				margin: 0;
+			}
+			&--title {
+				margin: 0 0 50px;
+				font-family: 'Gilroy-Extra-Bold', sans-serif;
+				font-size: 18px;
+				font-weight: normal;
+			}
+		}
+	}
+	&__contacts {
+		padding: 15px 0 0;
+		&-item {
+			&--title {
+				margin: 0 0 50px;
+				font-family: 'Gilroy-Extra-Bold', sans-serif;
+				font-size: 18px;
+				font-weight: normal;
+			}
+			&-phone {
+				&-title {
+					margin: 0 0 10px;
+					display: block;
+					font-size: 12px;
+					font-weight: normal;
+				}
+				&-link {
+					font-family: 'Gilroy-Extra-Bold', sans-serif;
+					font-size: 16px;
+					font-weight: normal;
+				}
+			}
+			&-adress {
+				&-title {
+					margin: 30px 0 20px;
+					display: block;
+					font-size: 12px;
+					font-weight: normal;
+				}
+				&-info {
+					margin: 0 0 20px;
+					display: block;
+					font-weight: 600;
+				}
+			}
+			&-time{
+				&-title {
+					margin: 30px 0 20px;
+					display: block;
+					font-size: 12px;
+					font-weight: normal;
+				}
+				&-info {
+					margin: 0 0 20px;
+					display: block;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}

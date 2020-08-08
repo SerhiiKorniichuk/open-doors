@@ -1,0 +1,23 @@
+.header {
+	position: relative;
+	z-index: 100;
+	padding: 15px 0;
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo-box {
+		& img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	&__contacts {
+		& a {
+			font-family: 'Gilroy-Extra-Bold', sans-serif;
+			font-size: 16px;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.h-navbar {
+	max-width: 700px;
+	width: 100%;
+	margin: 0 auto;
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__item {
+		margin: 0 45px 0 0;
+		font-weight: 600;
+		&:last-of-type {
+			margin: 0;
+		}
+	}
+}

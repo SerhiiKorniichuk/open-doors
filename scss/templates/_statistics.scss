@@ -1,0 +1,32 @@
+.statistics {
+	margin: -33px 0 0;
+	padding: 0 0 30px;
+	&__body {
+		margin: 0 -8px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	&__item {
+		max-width: 185px;
+		width: 100%;
+		margin: 8px;
+		padding: 33px 15px;
+		color: $white;
+		border-radius: 10px;
+		background-color: $blue;
+		text-align: center;
+		&-value {
+			font-family: 'Gilroy-Light', sans-serif;
+			font-weight: normal;
+			font-size: 48px;
+		}
+		&-description {
+			margin: 0 auto;
+			max-width: 123px;
+			font-size: 12px;
+			font-weight: normal;
+			line-height: 18px;
+		}
+	}
+}

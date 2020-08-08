@@ -1,0 +1,25 @@
+.cost {
+	background-image: url('../img/cost/bg-image.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	&__body {
+		display: flex;
+		justify-content: end;
+	}
+	&__form {
+		margin: 0 30px 0 auto;
+		&-body {
+			max-width: 418px;
+			padding: 84px 45px 65px;
+			background-color: rgba($white, 0.9);
+			border-radius: 0;
+		}
+		&-subtitle {
+			max-width: 230px;
+			display: block;
+		}
+		&-box {
+			max-width: 235px;
+		}
+	}
+}

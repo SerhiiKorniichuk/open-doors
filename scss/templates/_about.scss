@@ -1,0 +1,70 @@
+.about {
+	background-color: #fafafa;
+	&__body {
+		display: flex;
+	}
+	&__toogle {
+		padding: 20px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		&-box {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 40px;
+			max-width: 280px;
+			width: 100%;
+			min-height: 260px;
+			text-align: center;
+			&._active {
+				color: $white;
+				background-color: $blue;
+				&>.about__toogle-box-title {
+					color: $white;
+					font-weight: normal;
+				}
+			}
+			&-title {
+				display: block;
+				margin: 0 0 10px;
+				color: $blue;
+				font-family: 'Gilroy-Extra-Bold', sans-serif;
+				font-size: 48px;
+				font-weight: normal;
+			}
+			&-description {
+				font-weight: normal;
+				line-height: 20px;
+			}
+		}
+	}
+	&__info {
+		display: flex;
+		align-items: center;
+		&-image {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			& img {
+				display: block;
+				max-width: 310px;
+				height: auto;
+				overflow: hidden;
+			}
+		}
+		&-text {
+			padding: 0 0 0 7%;
+			&-title {
+				margin: 0 0 30px;
+				font-size: 30px;
+				font-weight: normal;
+			}
+			&-subtitle {
+				font-size: 16px;
+				font-weight: normal;
+				line-height: 28px;
+			}
+		}
+	}
+}
