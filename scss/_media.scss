@@ -1,0 +1,38 @@
+@media screen and ( min-width: 992px ) {
+	.h-navbar {
+		&__item {
+			& a{
+				transition: all 0.1s ease-in-out;
+			}
+			&:hover {
+				& a {
+					color: $blue;
+				}
+			}
+		}
+	}
+
+
+	.purchase-list {
+		&__item {
+			& .purchase-list__item-circle {
+				transition: all 0.2s ease-in-out;
+			}
+			&:hover {
+				& .purchase-list__item-circle {
+					color: $blue;
+					border: 1px solid $blue;
+					background-color: $white;
+				}
+			}
+		}
+	}
+
+	
+	.partners__slider-item img {
+		transition: all 0.2s ease-in-out;
+		&:hover {
+			filter: grayscale(0);
+		}
+	}
+}

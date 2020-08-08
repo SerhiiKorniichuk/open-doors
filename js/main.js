@@ -15,5 +15,11 @@ $(document).ready(function () {
 		asNavFor: '.reviews__slider-i'
 	});
 
+	$('.gallery__slider-body').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+	});
+
 	$('.slick-arrow').empty()
 })

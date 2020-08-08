@@ -3,8 +3,14 @@
 	background-image: url('../img/prices/bg-img.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	&--balconies {
+		padding: 45px 0 95px;
+	}
 	&__section-title {
 		margin: 0 0 27px;
+		&--balconies {
+			margin: 33px 0 40px;
+		}
 	}
 	&__wrap {
 		display: flex;
@@ -67,6 +73,7 @@
 			justify-content: center;
 			border: 1px solid $blue;
 			border-radius: 10px;
+			background-color: $white;
 			&-leftSide {
 				margin: 0 38px 0 0 ;
 				display: flex;
@@ -124,17 +131,17 @@
 					}
 				}
 				&-type, &-price {
-					padding: 15px 0;
+					padding: 18px 0;
 					min-width: 150px;
 				}
 				&-type {
 					padding-left: 5px;
-					// font-weight: 600;
+					font-weight: normal;
 				}
 				&-price {
 					color: red;
 					text-align: center;
-					// font-weight: 600;
+					font-weight: normal;
 				}
 			}	
 			&-advice {

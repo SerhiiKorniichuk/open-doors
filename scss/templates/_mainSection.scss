@@ -6,14 +6,43 @@
 	background-position: top center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	&--windows {
+		background-image: url('../img/main-section/bg-image-2.jpg');
+	}
+	&--doors {
+		background-image: url('../img/main-section/bg-image-3.jpg');
+		& .main-section__title {
+			max-width: 500px;
+			line-height: 45px;
+		}
+	}
+	&--construction {
+		background-image: url('../img/main-section/bg-image-4.jpg');
+	}
+	&--balconies {
+		background-image: url('../img/main-section/bg-image-5.jpg');
+
+	}
+	&--accessories {
+		background-image: url('../img/main-section/bg-image-6.jpg');
+
+	}
 	&__body {
 		position: relative;
 	}
 	&__title {
-		margin: 0 0 5px;
+		margin: 0 0 25px;
+		max-width: 775px;
+		line-height: 60px;
 		&-text {
 			font-family: 'Gilroy-Extra-Bold', sans-serif;
 			font-size: 74px;
+			&--light {
+				margin: 0;
+				font-family: 'Gilroy-Light', sans-serif;
+				font-size: 48px;
+				font-weight: normal;
+			}
 		}
 	}
 	&__sub-title {
@@ -24,9 +53,23 @@
 	}
 	&__description {
 		max-width: 490px;
+		&--window  {
+			margin: 25px 0 0;
+			max-width: 625px;
+		}
+		&--doors {
+			margin: 25px 0 0;
+			max-width: 680px;
+		}
 		&-text {
 			font-size: 14px;
 			line-height: 24px;
+			font-weight: normal;
+			&--window, &--doors, &--construction {
+				font-size: 24px;
+				line-height: 28px;
+				font-weight: normal;
+			}
 		}
 	}
 	&__btn-group {
