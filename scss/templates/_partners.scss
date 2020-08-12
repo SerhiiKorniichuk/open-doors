@@ -36,7 +36,23 @@
 				max-width: 100%;
 				max-height: 100%;
 				filter: grayscale(100%);
+				transition: all 0.2s ease-in-out;
+			}
+			&._active {
+				&.partners__slider-item {
+					& img {
+						filter: grayscale(0);
+					}
+				}
 			}
 		}
+	}
+}
+
+
+#img1 {
+	display: none;
+	&._active {
+		display: block;
 	}
 }

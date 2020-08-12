@@ -18,8 +18,17 @@
 		flex-direction: column;
 		border-radius: 10px;
 		background-color: #f0f0f0;
-		border: 2px solid #f0f0f0;
 		overflow: hidden;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			border-radius: 10px;
+			border: 2px solid transparent;
+		}
 		&-title {
 			position: absolute;
 			top: 0;
@@ -41,9 +50,11 @@
 		&-image {
 			display: flex;
 			justify-content: center;
-			margin: 90px 0 0;
+			transform: translateY(90px);
 			& img {
 				display: block;
+				max-width: 100%;
+				height: auto;
 			}
 		}
 	}
@@ -87,12 +98,12 @@
 			}
 		}
 		&-image {
-			display: flex;
-			justify-content: center;
+			margin: auto;
 			& img {
 				display: block;
 				max-width: 100%;
 				height: auto;
+				margin: auto;
 			}
 		}
 	}	

@@ -1,0 +1,131 @@
+.slide-popup {
+	z-index: 250;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(#000, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	&._active {
+		opacity: 1;
+		visibility: visible;
+	}
+	&__body {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 50px;
+		margin: 10%;
+		border-radius: 10px;
+		background-color: #fff;
+		& .slick-arrow {
+			position: absolute;
+			z-index: 10;
+			width: 25px;
+			height: 30px;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: $blue;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+			outline: none;
+		}
+		& .slick-prev {
+			left: 0px;
+			&::before, &::after {
+				content: '';
+				position: absolute;
+				left: 8px;
+				width: 10px;
+				height: 2px;
+				background-color: #fff;
+			}
+			&::before {
+				top: 11px;
+				transform: rotate(-45deg);
+			}
+			&::after {
+				top: 17px;
+				transform: rotate(45deg);
+			}
+		}
+		& .slick-next {
+			right: 0px;
+			&::before, &::after {
+				content: '';
+				position: absolute;
+				left: 8px;
+				width: 10px;
+				height: 2px;
+				background-color: #fff;
+			}
+			&::before {
+				top: 11px;
+				transform: rotate(45deg);
+			}
+			&::after {
+				top: 17px;
+				transform: rotate(-45deg);
+			}
+		}
+		
+	}
+	&__title {
+		margin: 0 0 30px;
+		font-family: 'Gilroy-Extra-Bold', sans-serif;
+		font-size: 30px;
+		font-weight: normal;
+	}
+	&__slider {
+		max-width: 940px;
+		display: flex;
+		justify-content: center;
+		&-item {
+			width: 100%;
+			outline: none;
+			& img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		&-counter {
+			width: 100%;
+			margin: 10px 0;
+		}
+	}
+	&__btn {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 25px;
+		height: 25px;
+		cursor: pointer;
+		&::before, &::after {
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 2px;
+			top: 50%;
+			left: 50%;
+			border-radius: 2px;
+			background-color: #c4c4c4;
+		}
+		&::before {
+			transform: translate(-50%, -50%) rotate(45deg);
+		}
+		&::after {
+			transform: translate(-50%, -50%) rotate(-45deg);
+		}
+	}
+	&__form-button {
+		margin: 30px 0 0;
+		min-width: 200px;
+	}
+}

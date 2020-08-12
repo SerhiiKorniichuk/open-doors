@@ -11,6 +11,13 @@ body {
 	font-size: 1rem;
 	color: #000;
 }
+
+.wrap {
+	width: 100vw;
+	height: 100vh;
+	overflow: auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
@@ -48,6 +55,7 @@ ul {
 	font-weight: 500;
 	text-transform: uppercase;
 	cursor: pointer;
+	outline: none;
 	&--primary {
 		padding: 17px 25px;
 		color: $white;
@@ -58,6 +66,6 @@ ul {
 		padding: 18px 26px;
 		color: $blue;
 		border: 1px solid $blue;
-		background-color: transparent;
+		background-color: rgba($white, 0.7);
 	}
 }

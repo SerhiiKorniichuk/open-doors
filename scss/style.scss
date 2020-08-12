@@ -6,6 +6,8 @@
 
 @import "templates/_header";
 @import "templates/_navbar";
+@import "templates/_mobileMenu";
+
 @import "templates/_mainSection";
 @import "templates/_form";
 @import "templates/_statistics";
@@ -20,7 +22,9 @@
 @import "templates/_purchaseList";
 @import "templates/_gallery";
 
-
 @import "templates/_footer";
+
+@import "templates/_popup";
+@import "templates/_sliderPopup";
 
 @import "_media";

@@ -1,0 +1,30 @@
+.mobile-menu {
+	z-index: 110;
+	position: fixed;
+	display: none;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 90px 0 60px;
+	border-radius: 0 0 10px 10px;
+	background-color: #f4f3f3;
+	box-shadow: 0 0 25px 1px rgba(#000, 0.5);
+	&._active {
+		display: flex;
+	}
+	&__list {
+		text-align: center;
+	}
+	&__item {
+		margin: 15px 0;
+		padding: 5px 0;
+		font-size: 18px;
+		font-weight: normal;
+		&--phone {
+			margin: 35px 0 0;
+			font-weight: bold;
+			font-size: 20px;
+		}
+	}
+}

@@ -20,8 +20,24 @@
 	&__tabs {
 		margin: 0 0 30px;
 		&-body {
+			position: relative;
 			display: flex;
 			justify-content: center;
+			& .prices__tabs-input {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				visibility: hidden;
+				&:checked {
+					& + .prices__tabs-item {
+						color: $white;
+						font-family: 'Gilroy-Extra-Bold', sans-serif;
+						background-color: $blue;
+						transition: background-color 0.2s ease-in-out;
+					}
+				}
+			}
 		}
 		&-item {
 			padding: 15px 20px;
@@ -30,12 +46,29 @@
 			font-weight: normal;
 			border-radius: 10px;
 			cursor: pointer;
-			&._active {
-				color: $white;
-				font-family: 'Gilroy-Extra-Bold', sans-serif;
-				border-radius: 10px;
-				background-color: $blue;
-				transition: all 0.2s ease-in-out;
+		}
+		&-mob {
+			display: none;
+			width: 95%;
+			&--partners {
+				width: 100%;
+				margin: 10px 0 0;
+			}
+			&-type {
+				display: flex;
+				justify-content: center;
+				padding: 0 10px 0 0;
+				border-radius: 5px;
+				max-width: 314px;
+				margin: 0 auto;
+				border: 1px solid #c4c4c4;
+				&-select {
+					width: 100%;
+					padding: 10px;
+					border: none;
+					background-color: transparent;
+					outline: none;
+				}
 			}
 		}
 	}
@@ -48,12 +81,26 @@
 	}
 	&__item {
 		&-partners {
+			position: relative;
 			display: flex;
 			justify-content: center;
 			&-list {
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				& .prices__item-partners-input {
+					position: absolute;
+					top: 0;
+					left: 0;
+					opacity: 0;
+					visibility: hidden;
+					&:checked {
+						& + .prices__item-partners-item {
+							color: $blue;
+							font-family: 'Gilroy-Extra-Bold', sans-serif;		
+						}
+					}
+				}
 			}
 			&-item {
 				margin: 0 12px 30px;
@@ -61,10 +108,10 @@
 				font-weight: normal;
 				cursor: pointer;
 				transition: all 0.2s ease-in-out;
-				&._active {
-					color: $blue;
-					font-family: 'Gilroy-Extra-Bold', sans-serif;
-				}
+				// &._active {
+				// 	color: $blue;
+				// 	font-family: 'Gilroy-Extra-Bold', sans-serif;
+				// }
 			}
 		}
 		&-offer {
@@ -74,6 +121,9 @@
 			border: 1px solid $blue;
 			border-radius: 10px;
 			background-color: $white;
+			// &._active {
+			// 	display: flex;
+			// }
 			&-leftSide {
 				margin: 0 38px 0 0 ;
 				display: flex;
@@ -85,6 +135,10 @@
 			}
 			&-logo {
 				margin: 0 0 30px;
+				height: 50px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				& img {
 					display: block;
 					max-width: 100%;
@@ -147,6 +201,13 @@
 			&-advice {
 				display: block;
 				margin: 15px 0 0;
+				&-text {
+					margin: 10px 0 0;
+					display: block;
+					text-align: center;
+					font-size: 12px;
+					font-weight: normal;
+				}
 			}
 			&-btn {
 				width: 100%;

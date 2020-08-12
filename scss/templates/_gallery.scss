@@ -9,41 +9,71 @@
 	}
 	&__slider {
 		&-body {
+			margin: 0 -10px;
 			position: relative;
 			display: flex;
 			justify-content: center;
 			& .slick-arrow {
 				position: absolute;
 				z-index: 10;
-				width: 35px;
-				height: 40px;
+				width: 25px;
+				height: 30px;
 				top: 50%;
 				transform: translateY(-50%);
 				background-color: $blue;
-				border-radius: 10px;
+				border-radius: 5px;
 				border: none;
 				cursor: pointer;
 				outline: none;
 			}
 			& .slick-prev {
 				left: -12px;
-				background-image: url('../img/gallery/arrow-prev.png');
-				background-repeat: no-repeat;
-				background-position: center;
+				&::before, &::after {
+					content: '';
+					position: absolute;
+					left: 8px;
+					width: 10px;
+					height: 2px;
+					background-color: #fff;
+				}
+				&::before {
+					top: 11px;
+					transform: rotate(-45deg);
+				}
+				&::after {
+					top: 17px;
+					transform: rotate(45deg);
+				}
 			}
 			& .slick-next {
 				right: -12px;
-				background-image: url('../img/gallery/arrow-next.png');
-				background-repeat: no-repeat;
-				background-position: center;
+				&::before, &::after {
+					content: '';
+					position: absolute;
+					left: 8px;
+					width: 10px;
+					height: 2px;
+					background-color: #fff;
+				}
+				&::before {
+					top: 11px;
+					transform: rotate(45deg);
+				}
+				&::after {
+					top: 17px;
+					transform: rotate(-45deg);
+				}
 			}
 		}
 		&-item {
+			margin: 0 10px;
 			display: flex !important;
 			align-items: center !important;
 			outline: none;
 			& img {
 				margin: 0 auto	;
+				border-radius: 10px;
+				max-width: 100%;
 			}
 		}
 	}

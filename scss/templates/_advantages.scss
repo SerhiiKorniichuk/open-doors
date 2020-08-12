@@ -5,10 +5,12 @@
 	background-position: top center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	overflow: hidden;
 	&__section-title {
 		margin: 0 0 33px;
 	}
 	&__body {
+		position: relative;
 		display: flex;
 		justify-content: center;
 	}
@@ -29,14 +31,16 @@
 		margin: 30px 0 30px 20px;
 		display: flex;
 		align-items: center;
+		cursor: default;
 		&-image {
 			position: relative;
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			min-width: 60px;
-			min-height: 60px;
+			min-width: 58px;
+			min-height: 58px;
 			border-radius: 30px;
+			border: 1px solid $blue;
 			background-color: $blue;
 			&::before {
 				content: '';
@@ -44,6 +48,18 @@
 				width: 35px;
 				height: 1px;
 				border-bottom: 1px dashed #000;
+			}
+			&--1 {
+				background: $blue url('../img/advantages/sun.png') no-repeat center;
+			}
+			&--2 {
+				background: $blue url('../img/advantages/shield.png') no-repeat center;
+			}
+			&--3 {
+				background: $blue url('../img/advantages/microphone.png') no-repeat center;
+			}
+			&--4 {
+				background: $blue url('../img/advantages/like.png') no-repeat center;
 			}
 		}
 		&-text {

@@ -65,7 +65,7 @@
 			font-size: 14px;
 			line-height: 24px;
 			font-weight: normal;
-			&--window, &--doors, &--construction {
+			&--window, &--doors, &--construction, &--accessories {
 				font-size: 24px;
 				line-height: 28px;
 				font-weight: normal;
@@ -76,13 +76,25 @@
 		display: inline-flex;
 		flex-direction: column;
 		margin: 30px 0 0;
+		&--off {
+			display: none;
+		}
+	}
+	&__btn {
+		&--mob {
+			display: none;
+			margin: 0 0 15px;
+		}
 	}
 	&__advantages {
+		display: flex;
+		flex-direction: column;
 		margin: 50px 0 0;
 		&-item {
-			display: flex;
+			display: inline-flex;
 			align-items: center;
 			margin: 0 0 25px;
+			cursor: default;
 			&:last-of-type {
 				margin: 0;
 			}
