@@ -520,22 +520,24 @@
 				</div>
 				<div class="reviews__body">
 					<div class="reviews__tabs">
-						<div class="reviews__tabs-item">
-							<span>Окна</span>
-						</div>
-						<div class=" reviews__tabs-item _active">
-							<span>Двери</span>
-						</div>
-						<div class="reviews__tabs-item">
-							<span>Алюминиевые окна</span>
-						</div>
-						<div class="reviews__tabs-item">
-							<span>Балконы</span>
-						</div>
+
+						<input class="reviews__tabs-input" type="radio" name="reviews" id="rWindows">
+						<label for='rWindows' class="reviews__tabs-item">Окна</label>
+
+						<input class="reviews__tabs-input" type="radio" name="reviews" id="rDoors" checked>
+						<label for="rDoors" class="reviews__tabs-item">Двери</label>
+
+						<input class="reviews__tabs-input" type="radio" name="reviews" id="rAlumWindows">
+						<label for="rAlumWindows" class="reviews__tabs-item">Алюминиевые окна</label>
+
+						<input class="reviews__tabs-input" type="radio" name="reviews" id="rBalconies">
+						<label for="rBalconies" class="reviews__tabs-item">Балконы</label>
+
 					</div>
-					<div class="reviews__sliders-body">
+
+					<div class="reviews__sliders-body" id="windowsRereviewsSlider">
 						<div class="reviews__slider">
-							<div class="reviews__slider-i">
+							<div class="reviews__slider-i" id="iSlider">
 								<div class="reviews__slider-i-item">
 									<img src="./img/reviews/slider/img-1.jpg" alt="Картинка">
 								</div>
@@ -547,14 +549,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="reviews__slider-t">
+						<div class="reviews__slider-t" id="tSlider">
 							<div class="reviews__slider-t-item">
 								<div class="reviews__slider-t-item-client">
 									<div class="reviews__slider-t-item-client-ava">
 										<img src="./img/reviews/slider/client/ava-1.png" alt="Аватар">
 									</div>
 									<div class="reviews__slider-t-item-client-info">
-										<span class="reviews__slider-t-item-client-info-text">Максим Леонгидович</span>
+										<span class="reviews__slider-t-item-client-info-text">1Максим Леонгидович</span>
 										<div class="reviews__slider-t-item-client-info-stars">
 											<span>&#9733;</span>
 											<span>&#9733;</span>
@@ -634,6 +636,313 @@
 							</div>
 						</div>
 					</div>
+
+					<div class="reviews__sliders-body _active" id="doorsRereviewsSlider">
+						<div class="reviews__slider">
+							<div class="reviews__slider-i" id="iSlider2">
+								<div class="reviews__slider-i-item">
+									<img src="./img/reviews/slider/img-1.jpg" alt="Картинка">
+								</div>
+								<div class="reviews__slider-i-item">
+									<img src="./img/reviews/slider/img-1.jpg" alt="Картинка">
+								</div>
+								<div class="reviews__slider-i-item">
+									<img src="./img/reviews/slider/img-1.jpg" alt="Картинка">
+								</div>
+							</div>
+						</div>
+						<div class="reviews__slider-t" id="tSlider2">
+							<div class="reviews__slider-t-item">
+								<div class="reviews__slider-t-item-client">
+									<div class="reviews__slider-t-item-client-ava">
+										<img src="./img/reviews/slider/client/ava-1.png" alt="Аватар">
+									</div>
+									<div class="reviews__slider-t-item-client-info">
+										<span class="reviews__slider-t-item-client-info-text">2Максим Леонгидович</span>
+										<div class="reviews__slider-t-item-client-info-stars">
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slider-t-item-post">
+									<span>
+										Великий Оксмокс предупреждал ее о
+										злых запятых, диких знаках вопроса и
+										коварных точках с запятой, но текст не
+										дал сбить себя с толку. Он собрал семь
+										своих заглавных букв, подпоясал
+										инициал за пояс и пустился в дорогу
+									</span>
+									<span class="reviews__slider-t-item-post-date">22.05.2020</span>
+								</div>
+							</div>
+							<div class="reviews__slider-t-item">
+								<div class="reviews__slider-t-item-client">
+									<div class="reviews__slider-t-item-client-ava">
+										<img src="./img/reviews/slider/client/ava-1.png" alt="Аватар">
+									</div>
+									<div class="reviews__slider-t-item-client-info">
+										<span class="reviews__slider-t-item-client-info-text">Максим Леонгидович</span>
+										<div class="reviews__slider-t-item-client-info-stars">
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slider-t-item-post">
+									<span>
+										Великий Оксмокс предупреждал ее о
+										злых запятых, диких знаках вопроса и
+										коварных точках с запятой, но текст не
+										дал сбить себя с толку. Он собрал семь
+										своих заглавных букв, подпоясал
+										инициал за пояс и пустился в дорогу
+									</span>
+									<span class="reviews__slider-t-item-post-date">22.05.2020</span>
+								</div>
+							</div>
+							<div class="reviews__slider-t-item">
+								<div class="reviews__slider-t-item-client">
+									<div class="reviews__slider-t-item-client-ava">
+										<img src="./img/reviews/slider/client/ava-1.png" alt="Аватар">
+									</div>
+									<div class="reviews__slider-t-item-client-info">
+										<span class="reviews__slider-t-item-client-info-text">Максим Леонгидович</span>
+										<div class="reviews__slider-t-item-client-info-stars">
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slider-t-item-post">
+									<span>
+										Великий Оксмокс предупреждал ее о
+										злых запятых, диких знаках вопроса и
+										коварных точках с запятой, но текст не
+										дал сбить себя с толку. Он собрал семь
+										своих заглавных букв, подпоясал
+										инициал за пояс и пустился в дорогу
+									</span>
+									<span class="reviews__slider-t-item-post-date">22.05.2020</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="reviews__sliders-body" id="alumWindowsRereviewsSlider">
+						<div class="reviews__slider">
+							<div class="reviews__slider-i" id="iSlider3">
+								<div class="reviews__slider-i-item">
+									<img src="./img/reviews/slider/img-1.jpg" alt="Картинка">
+								</div>
+								<div class="reviews__slider-i-item">
+									<img src="./img/reviews/slider/img-1.jpg" alt="Картинка">
+								</div>
+								<div class="reviews__slider-i-item">
+									<img src="./img/reviews/slider/img-1.jpg" alt="Картинка">
+								</div>
+							</div>
+						</div>
+						<div class="reviews__slider-t" id="tSlider3">
+							<div class="reviews__slider-t-item">
+								<div class="reviews__slider-t-item-client">
+									<div class="reviews__slider-t-item-client-ava">
+										<img src="./img/reviews/slider/client/ava-1.png" alt="Аватар">
+									</div>
+									<div class="reviews__slider-t-item-client-info">
+										<span class="reviews__slider-t-item-client-info-text">3Максим Леонгидович</span>
+										<div class="reviews__slider-t-item-client-info-stars">
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slider-t-item-post">
+									<span>
+										Великий Оксмокс предупреждал ее о
+										злых запятых, диких знаках вопроса и
+										коварных точках с запятой, но текст не
+										дал сбить себя с толку. Он собрал семь
+										своих заглавных букв, подпоясал
+										инициал за пояс и пустился в дорогу
+									</span>
+									<span class="reviews__slider-t-item-post-date">22.05.2020</span>
+								</div>
+							</div>
+							<div class="reviews__slider-t-item">
+								<div class="reviews__slider-t-item-client">
+									<div class="reviews__slider-t-item-client-ava">
+										<img src="./img/reviews/slider/client/ava-1.png" alt="Аватар">
+									</div>
+									<div class="reviews__slider-t-item-client-info">
+										<span class="reviews__slider-t-item-client-info-text">Максим Леонгидович</span>
+										<div class="reviews__slider-t-item-client-info-stars">
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slider-t-item-post">
+									<span>
+										Великий Оксмокс предупреждал ее о
+										злых запятых, диких знаках вопроса и
+										коварных точках с запятой, но текст не
+										дал сбить себя с толку. Он собрал семь
+										своих заглавных букв, подпоясал
+										инициал за пояс и пустился в дорогу
+									</span>
+									<span class="reviews__slider-t-item-post-date">22.05.2020</span>
+								</div>
+							</div>
+							<div class="reviews__slider-t-item">
+								<div class="reviews__slider-t-item-client">
+									<div class="reviews__slider-t-item-client-ava">
+										<img src="./img/reviews/slider/client/ava-1.png" alt="Аватар">
+									</div>
+									<div class="reviews__slider-t-item-client-info">
+										<span class="reviews__slider-t-item-client-info-text">Максим Леонгидович</span>
+										<div class="reviews__slider-t-item-client-info-stars">
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slider-t-item-post">
+									<span>
+										Великий Оксмокс предупреждал ее о
+										злых запятых, диких знаках вопроса и
+										коварных точках с запятой, но текст не
+										дал сбить себя с толку. Он собрал семь
+										своих заглавных букв, подпоясал
+										инициал за пояс и пустился в дорогу
+									</span>
+									<span class="reviews__slider-t-item-post-date">22.05.2020</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="reviews__sliders-body" id="balconiesRereviewsSlider">
+						<div class="reviews__slider">
+							<div class="reviews__slider-i" id="iSlider4">
+								<div class="reviews__slider-i-item">
+									<img src="./img/reviews/slider/img-1.jpg" alt="Картинка">
+								</div>
+								<div class="reviews__slider-i-item">
+									<img src="./img/reviews/slider/img-1.jpg" alt="Картинка">
+								</div>
+								<div class="reviews__slider-i-item">
+									<img src="./img/reviews/slider/img-1.jpg" alt="Картинка">
+								</div>
+							</div>
+						</div>
+						<div class="reviews__slider-t" id="tSlider4">
+							<div class="reviews__slider-t-item">
+								<div class="reviews__slider-t-item-client">
+									<div class="reviews__slider-t-item-client-ava">
+										<img src="./img/reviews/slider/client/ava-1.png" alt="Аватар">
+									</div>
+									<div class="reviews__slider-t-item-client-info">
+										<span class="reviews__slider-t-item-client-info-text">4Максим Леонгидович</span>
+										<div class="reviews__slider-t-item-client-info-stars">
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slider-t-item-post">
+									<span>
+										Великий Оксмокс предупреждал ее о
+										злых запятых, диких знаках вопроса и
+										коварных точках с запятой, но текст не
+										дал сбить себя с толку. Он собрал семь
+										своих заглавных букв, подпоясал
+										инициал за пояс и пустился в дорогу
+									</span>
+									<span class="reviews__slider-t-item-post-date">22.05.2020</span>
+								</div>
+							</div>
+							<div class="reviews__slider-t-item">
+								<div class="reviews__slider-t-item-client">
+									<div class="reviews__slider-t-item-client-ava">
+										<img src="./img/reviews/slider/client/ava-1.png" alt="Аватар">
+									</div>
+									<div class="reviews__slider-t-item-client-info">
+										<span class="reviews__slider-t-item-client-info-text">Максим Леонгидович</span>
+										<div class="reviews__slider-t-item-client-info-stars">
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slider-t-item-post">
+									<span>
+										Великий Оксмокс предупреждал ее о
+										злых запятых, диких знаках вопроса и
+										коварных точках с запятой, но текст не
+										дал сбить себя с толку. Он собрал семь
+										своих заглавных букв, подпоясал
+										инициал за пояс и пустился в дорогу
+									</span>
+									<span class="reviews__slider-t-item-post-date">22.05.2020</span>
+								</div>
+							</div>
+							<div class="reviews__slider-t-item">
+								<div class="reviews__slider-t-item-client">
+									<div class="reviews__slider-t-item-client-ava">
+										<img src="./img/reviews/slider/client/ava-1.png" alt="Аватар">
+									</div>
+									<div class="reviews__slider-t-item-client-info">
+										<span class="reviews__slider-t-item-client-info-text">Максим Леонгидович</span>
+										<div class="reviews__slider-t-item-client-info-stars">
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+											<span>&#9733;</span>
+										</div>
+									</div>
+								</div>
+								<div class="reviews__slider-t-item-post">
+									<span>
+										Великий Оксмокс предупреждал ее о
+										злых запятых, диких знаках вопроса и
+										коварных точках с запятой, но текст не
+										дал сбить себя с толку. Он собрал семь
+										своих заглавных букв, подпоясал
+										инициал за пояс и пустился в дорогу
+									</span>
+									<span class="reviews__slider-t-item-post-date">22.05.2020</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>

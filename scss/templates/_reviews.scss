@@ -11,6 +11,7 @@
 		display: block;
 	}
 	&__tabs {
+		position: relative;
 		margin: 0 0 0 17%;
 		display: flex;
 		justify-content: space-between;
@@ -20,15 +21,31 @@
 			font-size: 16px;
 			font-weight: normal;
 			cursor: pointer;
-			&._active {
-				font-family: 'Gilroy-Extra-Bold', sans-serif;
-				color: $blue;
+		}
+		& .reviews__tabs-input {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			visibility: hidden;
+			&:checked {
+				& + .reviews__tabs-item {
+					color: $blue;
+					font-family: 'Gilroy-Extra-Bold', sans-serif;		
+				}
 			}
 		}
 	}
 	&__sliders-body {
 		display: flex;
+		height: 0;
+		overflow: hidden;
 		justify-content: center;
+		&._active {
+			display: flex;
+			height: auto;
+			overflow: visible;
+		}
 	}
 	&__slider-i {
 		position: relative;
@@ -50,7 +67,7 @@
 			}
 		}
 	}
-	&__slider-t {
+	&__slider-t  {
 		max-width: 380px;
 		position: relative;
 		z-index: 5;

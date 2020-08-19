@@ -116,14 +116,14 @@
 		}
 		&-offer {
 			padding: 45px 70px;
-			display: flex;
+			display: none;
 			justify-content: center;
 			border: 1px solid $blue;
 			border-radius: 10px;
 			background-color: $white;
-			// &._active {
-			// 	display: flex;
-			// }
+			&._active {
+				display: flex;
+			}
 			&-leftSide {
 				margin: 0 38px 0 0 ;
 				display: flex;

@@ -213,14 +213,44 @@ $(document).ready(function () {
 		]
 	});
 
-	$('.reviews__slider-i').slick({
+	$('#iSlider').slick({
 		arrows: false,
 		fade: true,
-		asNavFor: '.reviews__slider-t'
+		asNavFor: '#tSlider'
 	});
-	$('.reviews__slider-t').slick({
+	$('#tSlider').slick({
 		fade: true,
-		asNavFor: '.reviews__slider-i'
+		asNavFor: '#iSlider'
+	});
+
+	$('#iSlider2').slick({
+		arrows: false,
+		fade: true,
+		asNavFor: '#tSlider2'
+	});
+	$('#tSlider2').slick({
+		fade: true,
+		asNavFor: '#iSlider2'
+	});
+
+	$('#iSlider3').slick({
+		arrows: false,
+		fade: true,
+		asNavFor: '#tSlider3'
+	});
+	$('#tSlider3').slick({
+		fade: true,
+		asNavFor: '#iSlider3'
+	});
+
+	$('#iSlider4').slick({
+		arrows: false,
+		fade: true,
+		asNavFor: '#tSlider4'
+	});
+	$('#tSlider4').slick({
+		fade: true,
+		asNavFor: '#iSlider4'
 	});
 
 	$('.gallery__slider-body').slick({
@@ -311,10 +341,435 @@ $(document).ready(function () {
 
 
 
-	$('.slick-arrow').empty()
-
-
-
 	// ===== SLIDERS ===== END =====
+
+
+
+	// ===== PRICE LIST ===== START =====
+
+	$('.reviews').on('change', () => {
+		if ($('#rWindows').prop('checked')) {
+			$('.reviews__sliders-body').removeClass('_active')
+			$('#windowsRereviewsSlider').addClass('_active')
+			$('#iSlider').slick({
+				arrows: false,
+				fade: true,
+				asNavFor: '#tSlider'
+			});
+			$('#tSlider').slick({
+				fade: true,
+				asNavFor: '#iSlider'
+			});
+		} else {
+			$('#iSlider').slick('unslick');
+			$('#tSlider').slick('unslick');
+			$('#windowsRereviewsSlider').removeClass('_active')
+		}
+
+		if ($('#rDoors').prop('checked')) {
+			$('.reviews__sliders-body').removeClass('_active')
+			$('#doorsRereviewsSlider').addClass('_active')
+			$('#iSlider2').slick({
+				arrows: false,
+				fade: true,
+				asNavFor: '#tSlider2'
+			});
+			$('#tSlider2').slick({
+				fade: true,
+				asNavFor: '#iSlider2'
+			});
+		} else {
+			$('#iSlider2').slick('unslick');
+			$('#tSlider2').slick('unslick');
+			$('#doorsRereviewsSlider').removeClass('_active')
+		}
+
+		if ($('#rAlumWindows').prop('checked')) {
+			$('.reviews__sliders-body').removeClass('_active')
+			$('#alumWindowsRereviewsSlider').addClass('_active')
+			$('#iSlider3').slick({
+				arrows: false,
+				fade: true,
+				asNavFor: '#tSlider3'
+			});
+			$('#tSlider3').slick({
+				fade: true,
+				asNavFor: '#iSlider3'
+			});
+		} else {
+			$('#iSlider3').slick('unslick');
+			$('#tSlider3').slick('unslick');
+			$('#alumWindowsRereviewsSlider').removeClass('_active')
+		}
+
+		if ($('#rBalconies').prop('checked')) {
+			$('.reviews__sliders-body').removeClass('_active')
+			$('#balconiesRereviewsSlider').addClass('_active')
+			$('#iSlider4').slick({
+				arrows: false,
+				fade: true,
+				asNavFor: '#tSlider4'
+			});
+			$('#tSlider4').slick({
+				fade: true,
+				asNavFor: '#iSlider4'
+			});
+		} else {
+			$('#iSlider4').slick('unslick');
+			$('#tSlider4').slick('unslick');
+			$('#balconiesRereviewsSlider').removeClass('_active')
+		}
+	})
+
+	if (window_width > 576) {
+
+		$('.prices').on('change', () => {
+			if ($('#pWindows').prop('checked') && $('#partnerWds').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#windowsWdsPriceList').addClass('_active')
+			} else {
+				$('#windowsWdsPriceList').removeClass('_active')
+			}
+
+			if ($('#pWindows').prop('checked') && $('#partnerSteko').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#windowsStekoPriceList').addClass('_active')
+			} else {
+				$('#windowsStekoPriceList').removeClass('_active')
+			}
+
+			if ($('#pWindows').prop('checked') && $('#partnerRehau').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#windowsRehauPriceList').addClass('_active')
+			} else {
+				$('#windowsRehauPriceList').removeClass('_active')
+			}
+
+			if ($('#pWindows').prop('checked') && $('#partnerViknar').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#windowsViknarPriceList').addClass('_active')
+			} else {
+				$('#windowsViknarPriceList').removeClass('_active')
+			}
+
+			if ($('#pWindows').prop('checked') && $('#partnerOpenT').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#windowsOpenTPriceList').addClass('_active')
+			} else {
+				$('#windowsOpenTPriceList').removeClass('_active')
+			}
+
+			// ------------------------------------------------------
+
+			if ($('#pDoors').prop('checked') && $('#partnerWds').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#doorsWdsPriceList').addClass('_active')
+			} else {
+				$('#doorsWdsPriceList').removeClass('_active')
+			}
+
+			if ($('#pDoors').prop('checked') && $('#partnerSteko').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#doorsStekoPriceList').addClass('_active')
+			} else {
+				$('#doorsStekoPriceList').removeClass('_active')
+			}
+
+			if ($('#pDoors').prop('checked') && $('#partnerRehau').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#doorsRehauPriceList').addClass('_active')
+			} else {
+				$('#doorsRehauPriceList').removeClass('_active')
+			}
+
+			if ($('#pDoors').prop('checked') && $('#partnerViknar').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#doorsViknarPriceList').addClass('_active')
+			} else {
+				$('#doorsViknarPriceList').removeClass('_active')
+			}
+
+			if ($('#pDoors').prop('checked') && $('#partnerOpenT').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#doorsOpenTPriceList').addClass('_active')
+			} else {
+				$('#doorsOpenTPriceList').removeClass('_active')
+			}
+
+			// ----------------------------------------------------------
+
+			if ($('#pAlumWindows').prop('checked') && $('#partnerWds').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#alumWindowsWdsPriceList').addClass('_active')
+			} else {
+				$('#alumWindowsWdsPriceList').removeClass('_active')
+			}
+
+			if ($('#pAlumWindows').prop('checked') && $('#partnerSteko').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#alumWindowsStekoPriceList').addClass('_active')
+			} else {
+				$('#alumWindowsStekoPriceList').removeClass('_active')
+			}
+
+			if ($('#pAlumWindows').prop('checked') && $('#partnerRehau').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#alumWindowsRehauPriceList').addClass('_active')
+			} else {
+				$('#alumWindowsRehauPriceList').removeClass('_active')
+			}
+
+			if ($('#pAlumWindows').prop('checked') && $('#partnerViknar').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#alumWindowsViknarPriceList').addClass('_active')
+			} else {
+				$('#alumWindowsViknarPriceList').removeClass('_active')
+			}
+
+			if ($('#pAlumWindows').prop('checked') && $('#partnerOpenT').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#alumWindowsOpenTPriceList').addClass('_active')
+			} else {
+				$('#alumWindowsOpenTPriceList').removeClass('_active')
+			}
+
+			// ---------------------------------------------------
+
+
+			if ($('#pBalconies').prop('checked') && $('#partnerWds').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#balconiesWdsPriceList').addClass('_active')
+			} else {
+				$('#balconiesWdsPriceList').removeClass('_active')
+			}
+
+			if ($('#pBalconies').prop('checked') && $('#partnerSteko').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#balconiesStekoPriceList').addClass('_active')
+			} else {
+				$('#balconiesStekoPriceList').removeClass('_active')
+			}
+
+			if ($('#pBalconies').prop('checked') && $('#partnerRehau').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#balconiesRehauPriceList').addClass('_active')
+			} else {
+				$('#balconiesRehauPriceList').removeClass('_active')
+			}
+
+			if ($('#pBalconies').prop('checked') && $('#partnerViknar').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#balconiesViknarPriceList').addClass('_active')
+			} else {
+				$('#balconiesViknarPriceList').removeClass('_active')
+			}
+
+			if ($('#pBalconies').prop('checked') && $('#partnerOpenT').prop('checked')) {
+				$('.prices__item-offer').removeClass('_active')
+				$('#balconiesOpenTPriceList').addClass('_active')
+			} else {
+				$('#balconiesOpenTPriceList').removeClass('_active')
+			}
+
+		})
+
+	} else if (window_width < 576) {
+		$('.prices').on('change', () => {
+
+			if ($('#mobileProductsTabs option[value=0]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=0]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#windowsWdsPriceList').addClass('_active')
+			} else {
+				$('#windowsWdsPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=0]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=1]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#windowsStekoPriceList').addClass('_active')
+			} else {
+				$('#windowsStekoPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=0]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=2]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#windowsRehauPriceList').addClass('_active')
+			} else {
+				$('#windowsRehauPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=0]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=3]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#windowsViknarPriceList').addClass('_active')
+			} else {
+				$('#windowsViknarPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=0]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=4]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#windowsOpenTPriceList').addClass('_active')
+			} else {
+				$('#windowsOpenTPriceList').removeClass('_active')
+			}
+
+			// --------------------------------------------------------
+
+			if ($('#mobileProductsTabs option[value=1]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=0]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#doorsWdsPriceList').addClass('_active')
+			} else {
+				$('#doorsWdsPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=1]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=1]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#doorsStekoPriceList').addClass('_active')
+			} else {
+				$('#doorsStekoPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=1]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=2]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#doorsRehauPriceList').addClass('_active')
+			} else {
+				$('#doorsRehauPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=1]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=3]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#doorsViknarPriceList').addClass('_active')
+			} else {
+				$('#doorsViknarPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=1]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=4]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#doorsOpenTPriceList').addClass('_active')
+			} else {
+				$('#doorsOpenTPriceList').removeClass('_active')
+			}
+
+			// --------------------------------------------------------
+
+			if ($('#mobileProductsTabs option[value=2]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=0]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#alumWindowsWdsPriceList').addClass('_active')
+			} else {
+				$('#alumWindowsWdsPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=2]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=1]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#alumWindowsStekoPriceList').addClass('_active')
+			} else {
+				$('#alumWindowsStekoPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=2]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=2]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#alumWindowsRehauPriceList').addClass('_active')
+			} else {
+				$('#alumWindowsRehauPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=2]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=3]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#alumWindowsViknarPriceList').addClass('_active')
+			} else {
+				$('#alumWindowsViknarPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=2]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=4]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#alumWindowsOpenTPriceList').addClass('_active')
+			} else {
+				$('#alumWindowsOpenTPriceList').removeClass('_active')
+			}
+
+			// --------------------------------------------------------
+
+			if ($('#mobileProductsTabs option[value=3]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=0]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#balconiesWdsPriceList').addClass('_active')
+			} else {
+				$('#balconiesWdsPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=3]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=1]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#balconiesStekoPriceList').addClass('_active')
+			} else {
+				$('#balconiesStekoPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=3]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=2]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#balconiesRehauPriceList').addClass('_active')
+			} else {
+				$('#balconiesRehauPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=3]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=3]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#balconiesViknarPriceList').addClass('_active')
+			} else {
+				$('#balconiesViknarPriceList').removeClass('_active')
+			}
+
+			if ($('#mobileProductsTabs option[value=3]').prop('selected')
+				&& $('#mobilePartnersTabs option[value=4]').prop('selected')) {
+
+				$('.prices__item-offer').removeClass('_active')
+				$('#balconiesOpenTPriceList').addClass('_active')
+			} else {
+				$('#balconiesOpenTPriceList').removeClass('_active')
+			}
+
+
+
+
+
+
+		})
+	}
+
+	// ===== PRICE LIST ===== END =====
 
 })
