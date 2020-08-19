@@ -1,3 +1,12 @@
+GULP
+---
+    **npm i** - install all modulse from project
+    **$gulp** - run in console to start gulp-build
+
+
+
+
+
 Первый абзац
 ***
 Второй абзац
