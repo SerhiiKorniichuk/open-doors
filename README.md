@@ -1,9 +1,7 @@
-GULP
+##QUICK START
 ---
-    **npm i** - install all modulse from project
+    ***npm i*** - install all modulse from project
     **$gulp** - run in console to start gulp-build
-
-
 
 
 
